@@ -6,6 +6,9 @@ let users = [
   { id: 4, name: "Doe", age: 22 }
 ];
 
+
+
+
 /* ---------------- GET ---------------- */
 
 const getAllUsers = (req, res) => {
