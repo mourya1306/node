@@ -7,8 +7,6 @@ let users = [
 ];
 
 
-
-
 /* ---------------- GET ---------------- */
 
 const getAllUsers = (req, res) => {

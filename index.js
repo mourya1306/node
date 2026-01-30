@@ -1,6 +1,12 @@
 import express from "express";
+import dotenv from 'dotenv';
+
+dotenv.config();
+
 import userRoutes from "./routes/userRoutes.js";
 import productRoutes from "./routes/productRoutes.js";
+import signupRoutes from "./routes/signupRoutes.js";
+import loginRoutes from "./routes/loginRoutes.js";
 
 const app = express();
 const PORT = 3000;
@@ -17,6 +23,8 @@ app.use(express.json());
 //get all users
 app.use("/users", userRoutes);
 app.use("/products", productRoutes);
+app.use("/signup", signupRoutes);
+app.use("/login", loginRoutes);
 
 
 /* Start server */

@@ -32,7 +32,9 @@ const getProductById = async (req, res) => {
 const createProduct = async (req, res) => {
 
   try {
-    const { name, category,desc, price } = req.body;     
+    
+    const { name, category,desc, price } = req.body;   
+
     const [result] =await connection.query(
       `INSERT INTO food_items (name, CategoryName, description,  price) 
       VALUES ('${name}', '${category}', '${desc}', ${price})`
